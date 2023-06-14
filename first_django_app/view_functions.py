@@ -8,3 +8,6 @@ def home(request):
         'second':20
     })
     # return HttpResponse("Hello World !!")
+
+def generate(request):
+    return render(request, "table.html")

@@ -20,5 +20,6 @@ from . import view_functions
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', view_functions.home)
+    path('', view_functions.home),
+    path('generate/', view_functions.generate)
 ]
