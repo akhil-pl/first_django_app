@@ -10,4 +10,9 @@ def home(request):
     # return HttpResponse("Hello World !!")
 
 def generate(request):
-    return render(request, "table.html")
+    num = request.GET.get("num")
+    upto = request.GET.get("upto")
+    return render(request, "table.html", {
+        'num':num,
+        'upto':upto
+    })

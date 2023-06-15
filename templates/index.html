@@ -7,19 +7,14 @@
     <h4>First: {{first}} </h4>
     <h4>Second: {{second}} </h4>
 
-    <form>
+    <form action="/generate/">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <label for="table_of" class="form-label">Input number </label>
+          <input type="number" name="num" class="form-control" id="table_of">
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <label for="table_upto" class="form-label">Upto: </label>
+          <input type="number" name="upto" class="form-control" id="table_upto">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
