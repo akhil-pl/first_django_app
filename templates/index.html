@@ -7,7 +7,8 @@
     <h4>First: {{first}} </h4>
     <h4>Second: {{second}} </h4>
 
-    <form action="/generate/">
+    <form action="/generate/" method="post">
+        {% csrf_token %}
         <div class="mb-3">
           <label for="table_of" class="form-label">Input number </label>
           <input type="number" name="num" class="form-control" id="table_of" placeholder="0">
