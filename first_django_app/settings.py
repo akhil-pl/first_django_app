@@ -51,6 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'first_django_app.urls'
+LOGIN_REDIRECT_URL = '/blog/'
 
 TEMPLATES = [
     {

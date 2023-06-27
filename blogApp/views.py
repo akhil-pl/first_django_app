@@ -2,10 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth.models import User
 from .forms import Register
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
-def  test_view(request):
-    return HttpResponse('<h1> This is from blogapp <h1>')
+
+@login_required
+def  blog_home(request):
+    return render(request, "blog.html")
 
 def register_user(request):
     if request.method == "POST":

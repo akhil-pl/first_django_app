@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', view_functions.home),
     path('generate/', view_functions.generate),
+    path('accounts/', include("django.contrib.auth.urls")), #the html will be checked on "templates/registration folder"
     path('blog/', include('blogApp.urls'))
 ]
