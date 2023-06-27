@@ -6,6 +6,7 @@ from django.template.defaulttags import register
 
 
 @register.filter
+# This is a filter as html has no for loop
 def get_range(value):
     return list(range(1, int(value)+1))
 
